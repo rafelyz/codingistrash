@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "wfont";
+    src: url(ApfelGrotezk.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family:wfont ;
+}
+.banner
+{
+    height: 30vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 125px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    
+}
+.navbar ul li ::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #615049;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+
+}
+.navbar ul li :hover::after{
+    width: 100%;
+}
+.content
+{
+    width: 100%;
+    position: absolute;
+    top: 18%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.start
+{
+    position: relative;
+    font-size: 2.2rem;
+    right: -3rem;
+    top: 2rem;
+}
+.start .story{
+    font-size: 2.6rem;
+    font-weight:bold;
+}
+.image1{
+    position: relative;
+    top: -29rem;
+    right: -57rem;
+}
+.linebreak{
+    position: relative;
+    top:-19rem;
+}
+.start2
+{
+    position: relative;
+    text-align: center;
+    top: -9rem;
+    font-size: 2rem;
+}
+.vl {
+    position: relative;
+    top: -12.7rem;
+    right: -59.6rem;
+    border-left: 2px solid grey;
+    height: 200px;
+  }
+  .vl2 {
+    position: relative;
+    top: -4rem;
+    right: -59.6rem;
+    border-left: 2px solid grey;
+    height: 200px;
+  }
+  .linebreak2{
+    position: relative;
+    top:-0.3rem;
+}
+

@@ -1,0 +1,139 @@
+@font-face {
+    font-family: "wfont";
+    src: url(ApfelGrotezk.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family:wfont ;
+}
+.banner
+{
+    height: 50vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 125px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    
+}
+.navbar ul li ::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #615049;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+
+}
+.navbar ul li :hover::after{
+    width: 100%;
+}
+.content
+{
+    width: 100%;
+    position: absolute;
+    top: 28%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.content h1{
+    font-size: 65px;
+}
+.icons{
+    position: relative;
+    right: -40rem;
+    top: -73rem;
+    font-size: 30px;
+}
+.meet{
+    font-size: 70px;
+    position: relative;
+    right: -40rem;
+    top: -60rem;
+    
+}
+.pitch{
+    font-size: 70px;
+    position: relative;
+    right: -67rem;
+    top: -60rem;
+    
+}
+.format{
+    font-size: 25px;
+    position: relative;
+    right: -83rem;
+    top: -56rem;
+
+}
+button{
+    width: 100px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 10;
+    border-radius: 20px;
+    border: 2px solid #615049;
+    background: transparent;
+    cursor: pointer;
+    color: black;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+    top:72%;
+   
+}
+span{
+    background: white;
+    height: 100%;
+    width: 0;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+
+}
+.btn{
+    position: relative;
+    right: -83rem;
+    top: -57rem;
+    z-index: 10;
+    
+}
+.box{
+    position: relative;
+    right: -81.5rem;
+    top: -32rem;
+    width: 600;
+    height: 500;
+    z-index: -3;
+}

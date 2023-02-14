@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W Interiors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="popup.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+   
+    <div class="banner">
+        <div class="navbar">
+            <a href="index.html" > <img src="winteriors.png" class="logo"></a>
+        <ul>
+           <li><a href="shop.html" >Shop</a></li> 
+           <li><a href="room.html" >Rooms</a></li> 
+           <li><a href="about.html" >About Us</a></li> 
+           <li><a href="contact.html" >Contact Us</a></li>    
+        </ul>
+        </div>
+    </div>
+    <div class="content">
+        <h1>CREATING W DESIGNS FOR YOU!</h1>
+        <p>Experience the ultimate indoor and outdoor sanctuary <br> only with W Interiors. </p>
+        
+    </div>
+    <div class="content2">
+        <h1>For Enquiries!</h1>
+        
+        <div>
+            
+        </div>
+    </div>
+    <button class="open-button" type="button"><span></span>Click Here</button>
+   <dialog class="modal" id="modal">
+    <div class="modal-header">
+<div class="title">Enquiry Form :</div>
+<button data-close-button class="close-button">&times;</button>
+    </div>
+    <hr>
+    <div class="modal-body">
+       Please Fill the following form with correct data for enquiry.
+       Our concerned department will contact you within a day. Thank You! <br>
+        <form class="form" method="dialog">
+            <label for="fname">Your Name:</label><br>
+            <input type="text" id="fname" name="fname" required="required"><br>
+            <label for="lname">Email:</label><br>
+            <input type="email" id="lname" name="lname" required="required"><br>
+            <label for="phone">Phone:</label><br>
+            <input type="text" id="num" name="num" required="required"><br>
+            <label for="enq">Enquiry Purpose:</label><br>
+            <input type="text" id="enqu" name="enqu" required="required"><br><br>
+            <button class="submit" type="submit" required="required"><span></span><text>Submit</text></button>
+          </form>
+    </div>
+   </dialog>
+</body>
+</html>

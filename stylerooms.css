@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "wfont";
+    src: url(ApfelGrotezk.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family:wfont ;
+}
+.banner
+{
+    height: 30vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 125px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    
+}
+.navbar ul li ::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #615049;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+
+}
+.navbar ul li :hover::after{
+    width: 100%;
+}
+.content
+{
+    width: 100%;
+    position: absolute;
+    top: 18%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.content h1{
+    font-size: 55px;
+}
+.cat
+{
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: black;
+}
+.cat h1{
+    font-size: 55px;
+}
+.container{
+    width: 90%;
+    padding: 20px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.box{
+    width: 500px;
+    margin: 0 10px;
+    box-shadow: 0 0 20px 2px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+.box img{
+    display: block;
+    width: 100%;
+    border-radius:10px ;
+    transition: 2s;
+}
+.box:hover{
+   transform: scale(1.1); 
+}
+.t1{
+    position: relative;
+font-size: 3rem;
+color: black;
+top: -7.6rem;
+right: -20.4rem;
+}
+.t2{
+    position: relative;
+font-size: 3rem;
+color: black;
+top: -11rem;
+right: -52.4rem;
+}
+.t3{
+    position: relative;
+font-size: 3rem;
+color: black;
+top: -15rem;
+right: -85.4rem;
+}
